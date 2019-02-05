@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+<title>NU.</title>
+</head>
+<style>
+body {
+  background-color: Black;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 20px;
+  color: white;
+  text-align:center;
+ text-decoration-color: none;
+margin-bottom: 5%;
+margin-top: 0}
+
+
+
+a{
+  text-decoration: none;
+  position:inherit;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+}
+.nulogo{
+
+  max-width:0;
+  height: auto;
+  padding-top: 0;
+  margin-top: 10;
+  float: left;
+}
+.cart{
+
+  max-width: 100%;
+  height: auto;
+  padding-top: 0;
+  margin-top: 10;
+  float: right;
+  margin-right:100%;
+  padding-right:100%;
+}
+ form{
+  margin-bottom:50%;
+  text-align: center;
+ }
+
+
+
+</style>
+<img src="nulogo.jpg" alt="nulogo" width="120" height="120" style="float: left"/>
+<img src="cart.png" alt="cart" width="60" height="60" style="float: right" style = "margin-right:10" />
+<!-- Display the countdown timer in an element -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 31, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<body>
+
+<h1>NEWLY UNTITLED</h1>
+<p>CURRENTLY WERE ARE CLOSED SORRY</p>
+<center><img src="coming soon.png" width="960" height="540"/></center>
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Gender: <select name="gender[]" multiple>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+<a href="https://www.instagram.com/newlyuntitled"><p>INSTAGRAM</p></a>
+<a href="https://www.twitter.com/newlyuntitled"><p>TWITTER</p></a>
+<a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCa1vvrvcugLeadX6eeIAD4Q&e=ATPUJh8hlX5MRyn4mgB3P82nNEADm6z2vgRTX3uEizKWruZl2ofC5prbWLzSARESmJ7zv7U9"><p>YOUTUBE</p></a>
+
+</body>
+
+
+</html>
